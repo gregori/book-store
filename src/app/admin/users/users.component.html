@@ -1,4 +1,5 @@
 <h1>Users Administration</h1>
+<a class="btn btn-primary mb-3" (click)="addUser()">Add</a>
 <div class="container row">
   <div class="col-md-6">
     <table class="table">
@@ -19,6 +20,6 @@
     </table>
   </div>
   <div class="col-md-6">
-    Display User Details and Add User here.
+    <app-adduser *ngIf="action === 'add'" [user]="selectedUser" (userAddedEvent)="refreshData()"></app-adduser>
   </div>
 </div>
