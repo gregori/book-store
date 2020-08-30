@@ -1,0 +1,10 @@
+img.custom-image-style {
+  margin-left: 60px;
+  margin-top: 10px;
+  height: 300px;
+  width: 200px;
+}
+
+div.book-desc-container > div > p {
+  margin-left: 60px;
+}
